@@ -1,0 +1,44 @@
+@import 'grid.generator.scss';
+@include gridGenerator();
+
+// Default settings for gridGenerator()
+//     $gridColumns: 12,                    // number of grid columns 
+//     $breakpoints: (0, 480px, 800px),     // array of breakpoints
+//     $breakpointPrefixes: (s-,m-,l-),     // array of breakpoint prefixes
+//     $breakpointType: 'px',               // breakpoint type px or em 
+//     $spaceUnits: (.25em,.5em, 1em, 2em)  // array padding and margin units
+
+
+// Custom Settings:
+// 
+// For example, use a 18-column grid (and keep all the other defaults:
+// @include gridGenerator(18);
+
+// Change the breakpoints, or add in more. 
+// Name the prefixes whatever you like xs-, xl-, etc. 
+// If you prefer, set ems for your breakpoints.
+// @include gridGenerator(
+//     12,
+//     (0, 20em, 30em, 60em, 80em),
+//     (xs-,s-,m-,l-,xl-),
+//     'em'
+// );
+
+// Set custom padding and margin utility classes to make 
+// creating and modifying responsive layouts fast and easy.
+// @include gridGenerator(
+//     12,
+//     (0, 480px, 800px),
+//     (s-,m-,l-),
+//     'px',
+//     $spaceUnits: (.5em,1em,2em)
+// );
+
+// Or don’t use any spacing helpers, if you prefer
+@include gridGenerator(
+    12,
+    (0, 480px, 800px),
+    (s-,m-,l-),
+    'px',
+    $spaceUnits: false
+);
