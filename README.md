@@ -1,4 +1,4 @@
-#Standard Grid Generator
+#Standard Grid Generator (SASS)
 
 A SASS grid generator for creating responsive grids with some nice features.
 
