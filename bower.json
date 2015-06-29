@@ -7,7 +7,6 @@
   "authors": [
     "John Polacek <http://johnpolacek.com>"
   ],
-  "directory":"~/sass",
   "description": "A SASS grid generator for creating responsive grids with some nice features.",
   "keywords": [
     "css",
@@ -16,5 +15,5 @@
     "grid generator",
     "responsive"
   ],
-  "license": "Dual MIT and GPL"
+  "license": "MIT"
 }
