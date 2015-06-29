@@ -1,0 +1,34 @@
+{
+  "name": "standard-grid-generator",
+  "title": "Standard Grid Generator",
+  "version": "1.0.1",
+  "description": "A SASS grid generator for creating responsive grids with some nice features.",
+  "main": "grid.generator.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnpolacek/standard-grid-generator.git"
+  },
+  "keywords": [
+    "responsive",
+    "grid",
+    "sass",
+    "grid",
+    "generator"
+  ],
+  "author": {
+    "name": "John Polacek",
+    "url": "http://www.johnpolacek.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnpolacek/standard-grid-generator/issues"
+  },
+  "homepage": "https://github.com/johnpolacek/standard-grid-generator",
+  "files":[
+    "grid.generator.scss",
+    "grid.scss"
+  ]
+}
