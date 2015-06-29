@@ -59,8 +59,14 @@ In your HTML:
 
 ```
 <div class="pad-2 m-pad-1 s-pad-0">
-<div class="pad-bottom-4">
+<div class="pad-bottom-4 marg-bottom-2">
 <div class="pad-vertical-1 pad-sides-2">
+```
+
+You can use responsive breakpoint prefixing on these as well.
+
+```
+<div class="pad-sides-2 s-pad-sides-1">
 ```
 
 Or don’t use any spacing helpers, if you prefer.
