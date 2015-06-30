@@ -29,18 +29,23 @@ html { box-sizing: border-box; }
   .#{$prefix}marg-#{$i}-vertical { margin-top: $spaceUnit; margin-bottom: $spaceUnit; }
 }
 @mixin gridClasses($_prefix:'', $gridColumns:12, $spaceUnits:(.5em, 1em, 2em), $breakpoint_min:'', $breakpoint_max:''){
+  
+  // grid classes
   .#{$_prefix}grid-all {
     margin: 0; clear: none; float: left; 
-  }
-  .#{$_prefix}offset-0 {
-    margin-left: 0;
   }
   @for $i from 1 through $gridColumns {
     .#{$_prefix}grid-#{$i} {
       @extend .#{$_prefix}grid-all;
       width:percentage($i/$gridColumns);
     }
-    //* offsets */
+  }
+
+  // offset classes
+  .#{$_prefix}offset-0 {
+    margin-left: 0;
+  }
+  @for $i from 1 through $gridColumns {
     .#{$_prefix}offset-#{$i} {
       margin-left:percentage($i/$gridColumns);
     }
