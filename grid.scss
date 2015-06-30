@@ -35,10 +35,10 @@
 // );
 
 // Or don’t use any spacing helpers, if you prefer
-@include gridGenerator(
-    12,
-    (0, 480px, 800px),
-    (s-,m-,l-),
-    'px',
-    $spaceUnits: false
-);
+// @include gridGenerator(
+//     12,
+//     (0, 480px, 800px),
+//     (s-,m-,l-),
+//     'px',
+//     $spaceUnits: false
+// );
