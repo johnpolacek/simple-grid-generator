@@ -1,7 +1,7 @@
 {
   "name": "Simple Grid Generator",
   "main": [
-    "sass/grid.scss"
+    "grid.generator.scss"
   ],
   "homepage": "http://johnpolacek.github.io/simple-grid-generator",
   "authors": [
