@@ -28,7 +28,7 @@ html { box-sizing: border-box; }
   .#{$prefix}marg-#{$i}-sides { margin-left: $spaceUnit; margin-right: $spaceUnit; }
   .#{$prefix}marg-#{$i}-vertical { margin-top: $spaceUnit; margin-bottom: $spaceUnit; }
 }
-@mixin gridClasses($_prefix:'', $gridColumns:12, $spaceUnits:(.5em, 1em, 2em), $breakpoint_min:'', $breakpoint_max:''){
+@mixin gridClasses($_prefix:'', $gridColumns:12, $spaceUnits:(8px,16px,32px), $breakpoint_min:'', $breakpoint_max:''){
   
   // grid classes
   .#{$_prefix}grid-all {
@@ -53,12 +53,12 @@ html { box-sizing: border-box; }
 
   // spacing helper classes
   @if $spaceUnits {
-    @include spacingHelpers($_prefix, 0, 0);
     $i : 1;
     @each $spaceUnit in $spaceUnits {
       @include spacingHelpers($_prefix, $i, $spaceUnit);
       $i : $i + 1;
     }
+    @include spacingHelpers($_prefix, 0, 0);
   }
 }
 
@@ -68,7 +68,7 @@ html { box-sizing: border-box; }
          $breakpoints: (0, 480px, 800px),     // array of breakpoints
          $breakpointPrefixes: (s-,m-,l-),     // array of breakpoint prefixes
          $breakpointType: 'px',               // breakpoint type px or em 
-         $spaceUnits: (.25em,.5em, 1em, 2em)  // array padding and margin units
+         $spaceUnits: (8px,16px,32px)  // array padding and margin units
        ) {
 
   //* generate top-level grid classes, no prefix */
