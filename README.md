@@ -1,6 +1,6 @@
 #Simple Grid Generator (SASS)
 
-A SASS grid generator for creating responsive grids with some nice features.
+A SASS grid generator for creating responsive grids with some nice features. View an example at [johnpolacek.github.io/simple-grid](http://johnpolacek.github.io/simple-grid/).
 
 ##Features
 
