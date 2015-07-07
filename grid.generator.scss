@@ -31,12 +31,12 @@ html { box-sizing: border-box; }
 @mixin gridClasses($_prefix:'', $gridColumns:12, $spaceUnits:(8px,16px,32px), $breakpoint_min:'', $breakpoint_max:''){
   
   // grid classes
-  .#{$_prefix}grid-all {
+  .#{$_prefix}grid {
     margin: 0; clear: none; float: left; 
   }
   @for $i from 1 through $gridColumns {
     .#{$_prefix}grid-#{$i} {
-      @extend .#{$_prefix}grid-all;
+      @extend .#{$_prefix}grid;
       width:percentage($i/$gridColumns);
     }
   }
