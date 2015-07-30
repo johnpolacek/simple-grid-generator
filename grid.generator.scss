@@ -19,14 +19,14 @@ html { box-sizing: border-box; }
   .#{$prefix}pad-#{$i}-top { padding-top: $spaceUnit; }
   .#{$prefix}pad-#{$i}-bottom { padding-bottom: $spaceUnit; }
   .#{$prefix}pad-#{$i}-sides { padding-left: $spaceUnit; padding-right: $spaceUnit; }
-  .#{$prefix}pad-#{$i}-vertical { padding-top: $spaceUnit; padding-bottom: $spaceUnit; }
+  .#{$prefix}pad-#{$i}-vert { padding-top: $spaceUnit; padding-bottom: $spaceUnit; }
   .#{$prefix}marg-#{$i} { margin: $spaceUnit; }
   .#{$prefix}marg-#{$i}-left { margin-left: $spaceUnit; }
   .#{$prefix}marg-#{$i}-right { margin-right: $spaceUnit; }
   .#{$prefix}marg-#{$i}-top { margin-top: $spaceUnit; }
   .#{$prefix}marg-#{$i}-bottom { margin-bottom: $spaceUnit; }
   .#{$prefix}marg-#{$i}-sides { margin-left: $spaceUnit; margin-right: $spaceUnit; }
-  .#{$prefix}marg-#{$i}-vertical { margin-top: $spaceUnit; margin-bottom: $spaceUnit; }
+  .#{$prefix}marg-#{$i}-vert { margin-top: $spaceUnit; margin-bottom: $spaceUnit; }
 }
 @mixin gridClasses($_prefix:'', $gridColumns:12, $spaceUnits:(8px,16px,32px), $breakpoint_min:'', $breakpoint_max:''){
   
