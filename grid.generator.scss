@@ -98,16 +98,7 @@ html { box-sizing: border-box; }
           
     } @else {
 
-      //* middle breakpoints */
-      @if $breakpoint_max != '' {
-
-        @media (min-width: $breakpoint_min) and (max-width: $breakpoint_max) {
-          @include gridClasses($prefix, $gridColumns, $spaceUnits);
-        }
-
-      //* largest breakpoint */
-      } @else {
-
+      //* all other breakpoints */
         @media (min-width: $breakpoint_min) {
           @include gridClasses($prefix, $gridColumns, $spaceUnits);
         }
