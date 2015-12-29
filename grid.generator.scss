@@ -89,20 +89,9 @@ html { box-sizing: border-box; }
       $breakpoint_max: nth($breakpoints, $i+1);
     }
 
-  //   //* smallest breakpoint */
-    @if $breakpoint_min == 1 {
-
-      @media (max-width: $breakpoint_max) {
-        @include gridClasses($prefix, $gridColumns, $spaceUnits);
-      }
-          
-    } @else {
-
-      //* all other breakpoints */
-        @media (min-width: $breakpoint_min) {
-          @include gridClasses($prefix, $gridColumns, $spaceUnits);
-        }
-      }
+    // Makes min-width set for all breakpoints
+    @media (min-width: $breakpoint_min) {
+      @include gridClasses($prefix, $gridColumns, $spaceUnits);
     }
   }
 }
