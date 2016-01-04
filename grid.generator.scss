@@ -36,10 +36,12 @@ html { box-sizing: border-box; }
   .#{$prefix}align-center { text-align: center; }
   .#{$prefix}align-right { text-align: right; }
   .#{$prefix}align-left { text-align: left; }
-  .#{$prefix}block { display: block; }
-  .#{$prefix}inline { display: inline-block; }
+  .#{$prefix}block { display: block !important; }
+  .#{$prefix}inline-block { display: inline-block !important; }
+  .#{$prefix}inline { display: inline !important; }
   .#{$prefix}center-margin { margin: 0 auto; }
   .#{$prefix}border-box { box-sizing: border-box; }
+  .#{$prefix}invisible { display: none !important; }
 
 }
 
