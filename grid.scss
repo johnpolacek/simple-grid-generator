@@ -1,6 +1,8 @@
 @import 'grid.generator.scss';
 @include gridGenerator();
 
+@include padHalf();
+
 // Default settings for gridGenerator()
 //     $gridColumns: 12,                    // number of grid columns 
 //     $breakpoints: (0, 480px, 800px),     // array of breakpoints

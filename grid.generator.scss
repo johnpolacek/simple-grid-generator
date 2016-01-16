@@ -62,6 +62,10 @@ html { box-sizing: border-box; }
   }
 }
 
+@mixin padHalf($halfUnit: 4px) {
+  @include spacingHelpers('', 'half', $halfUnit);
+}
+
 // generate grid classes for each breakpoint, defaults defined below
 @mixin gridGenerator(
          $gridColumns: 12,                    // number of grid columns 
