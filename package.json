@@ -1,7 +1,7 @@
 {
   "name": "simple-grid-generator",
   "title": "Simple Grid Generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A SASS grid generator for creating responsive grids with some nice features.",
   "main": "grid.generator.scss",
   "repository": {

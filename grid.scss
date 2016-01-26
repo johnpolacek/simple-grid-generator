@@ -2,6 +2,7 @@
 @include gridGenerator();
 
 @include padHalf();
+@include gridFlex();
 
 // Default settings for gridGenerator()
 //     $gridColumns: 12,                    // number of grid columns 

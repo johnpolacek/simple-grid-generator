@@ -66,6 +66,22 @@ html { box-sizing: border-box; }
   @include spacingHelpers('', 'half', $halfUnit);
 }
 
+// use grid-flex for equal height grid containers
+@mixin gridFlex() {
+  .grid-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-wrap: wrap;
+    -webkit-box-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flexbox-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 // generate grid classes for each breakpoint, defaults defined below
 @mixin gridGenerator(
          $gridColumns: 12,                    // number of grid columns 
