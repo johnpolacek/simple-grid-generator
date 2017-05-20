@@ -1,24 +1,24 @@
-#Simple Grid Generator (SASS)
+# Simple Grid Generator (SASS)
 
 A SASS grid generator for creating responsive grids with some nice features. View an example at [johnpolacek.github.io/simple-grid](http://johnpolacek.github.io/simple-grid/).
 
-##Features
+## Features
 
 
-####Easy to Use
+#### Easy to Use
 ```
 @import 'grid.generator.scss';
 @include gridGenerator();
 ```
 
-####Set Your Columns
+#### Set Your Columns
 Switch to a 18-column or 24-column grid instead.
 
 ```
 @include gridGenerator(18);
 ```
 
-####Breakpoints and Breakpoint Prefixes
+#### Breakpoints and Breakpoint Prefixes
 Change the breakpoints, or add in more. Name the prefixes whatever you like xs-, xl-, etc. If you prefer, set ems for your breakpoints.
 
 ```
@@ -43,7 +43,7 @@ Breakpoint prefixing allows for markup that sets a default grid width, then over
 ```
 
 
-####Spacing Helpers
+#### Spacing Helpers
 For quick, easy layouts, set custom utility classes to set consistent padding and margin on all your elements.
 
 ```
@@ -83,5 +83,5 @@ Or don’t use any spacing helpers, if you prefer.
 
 
 
-##License
+## License
 Author & copyright (c) 2015: [John Polacek](http://johnpolacek.com), Dual MIT & GPL license
